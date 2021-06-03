@@ -53,6 +53,10 @@ button:hover {
   height: 75vh;
   border-bottom-left-radius: 120px;
   overflow: hidden;
+  background-position-y: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -165,12 +169,12 @@ nav > ul > li {
   text-align: center;
 }
 
-h1 {
+.showcase h1 {
   font-size: 50px;
   margin: 20px;
 }
 
-h3 {
+.showcase h3 {
   font-family: var(--font);
 }
 .button {
@@ -248,12 +252,11 @@ h3 {
 }
 
 .feature-a h1 {
+  font-size: 40px;
   text-align: center;
+  margin-bottom: 90px;
 }
 #img {
-  height: 120vh;
-  width: 60vw;
-  background-size: cover;
 }
 .feature-a #img {
   grid-column: 3/-1;

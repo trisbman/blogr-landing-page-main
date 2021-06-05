@@ -20,17 +20,21 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Ubuntu"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Frontend Mentor | [Blogr]</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
   </head>
   <body>
-    <div class="showcase-container">
+     <div class="showcase-container">
       <header class="navbar">
         <div id="navbar-div">
           <img src="./images/logo.svg" alt="" />
-          <nav>
-            <ul>
+          <nav>            
+              <button id='toggle' class="fa fa-bars"></button>
+            <ul id="menu">
               <li>
                 <a class='dropdown-header' href="#">Product &dtrif;</a>
                 <ul class='dropdown-content'>
@@ -173,5 +177,40 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/trisbman">Tristan Budiman</a>.
     </div>
+    <!-- SCRIPT -->
+    <script>
+      if(getComputedStyle(toggleBtn).display === 'block'){                
+        
+      const toggleBtn = document.getElementById('toggle')
+      const menuListContainer = document.getElementById('menu')
+      const topNav = document.getElementById('navbar-div').parentElement
+      const container = topNav.parentElement
+
+      toggleBtn.addEventListener('click', toggle)
+
+      const container__height = getComputedStyle(container).height
+      menuListContainer.style.height = container__height
+      const offsetTop = parseInt(topNav.offsetTop)
+      window.onscroll = () => sticky();
+
+      
+        topNav.children[0].lastElementChild.removeChild(menuListContainer)                                
+      
+      
+      function toggle(){
+        if(getComputedStyle(menuListContainer)[0]) topNav.removeChild(menuListContainer)
+        else topNav.appendChild(menuListContainer, container.firstElementChild)      
+      }
+
+      function sticky(){                        
+        if (window.pageYOffset >= offsetTop) {          
+          topNav.classList.add("sticky")
+          topNav.classList.add("content")
+        } else {
+          topNav.classList.remove("sticky");
+        }
+      }
+    }
+    </script>
   </body>
 </html>

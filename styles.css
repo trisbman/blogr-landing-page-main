@@ -452,10 +452,10 @@ footer li {
     flex-flow: column;
     margin: 0;
     min-width: 0;
+    padding: 0;
     width: 100%;
     min-height: 95vh;
     height: fit-content;
-    padding: 0;
     background: linear-gradient(
         to right,
         hsl(13, 100%, 72%),
@@ -489,6 +489,7 @@ footer li {
   .showcase {
     height: 70vh;
     margin: 0 auto;
+    padding: 0 12px;
   }
 
   /* hamburger */
@@ -496,18 +497,18 @@ footer li {
     overflow: hidden;
   }
   .navbar {
-    min-width: 100%;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
+
+    min-width: unset;
   }
   #navbar-div {
-    min-width: 250px;
-    width: 80vw;
+    min-width: 400px;
+    max-width: 90%;
     justify-content: space-between;
     z-index: 2;
-    padding: 20px 0;
   }
   #navbar-div img {
     position: static;
@@ -554,6 +555,7 @@ footer li {
       hsl(353, 100%, 62%)
     );
     border-bottom-left-radius: 200px;
+    visibility: hidden;
   }
 
   .dropdown-header {
@@ -566,7 +568,6 @@ footer li {
 
   .sticky {
     position: fixed;
-    margin: 0;
     top: 0;
     background: inherit;
   }

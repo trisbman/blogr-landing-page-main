@@ -24,8 +24,6 @@
 
     <title>Frontend Mentor | [Blogr]</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    
   </head>
   <body>
      <div class="showcase-container">
@@ -179,8 +177,9 @@
     </div>
     <!-- SCRIPT -->
     <script>
-      if(getComputedStyle(toggleBtn).display === 'block'){                
-        
+      window.onload = () => handler();
+      window.onscroll = () => sticky();
+
       const toggleBtn = document.getElementById('toggle')
       const menuListContainer = document.getElementById('menu')
       const topNav = document.getElementById('navbar-div').parentElement
@@ -189,17 +188,21 @@
       toggleBtn.addEventListener('click', toggle)
 
       const container__height = getComputedStyle(container).height
-      menuListContainer.style.height = container__height
       const offsetTop = parseInt(topNav.offsetTop)
-      window.onscroll = () => sticky();
-
       
+      function handler(){
+        if(getComputedStyle(toggleBtn).display === 'block'){  
+        menuListContainer.style.height = container__height              
         topNav.children[0].lastElementChild.removeChild(menuListContainer)                                
-      
+        }
+      }
       
       function toggle(){
         if(getComputedStyle(menuListContainer)[0]) topNav.removeChild(menuListContainer)
-        else topNav.appendChild(menuListContainer, container.firstElementChild)      
+        else {
+          menuListContainer.style.visibility = 'visible'
+          topNav.appendChild(menuListContainer, container.firstElementChild)          
+        }        
       }
 
       function sticky(){                        
@@ -210,7 +213,7 @@
           topNav.classList.remove("sticky");
         }
       }
-    }
+    
     </script>
   </body>
 </html>

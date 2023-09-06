@@ -21,10 +21,10 @@ function handler() {
 
 function toggle() {
   if (getComputedStyle(menuListContainer)[0])
-    topNavChild.removeChild(menuListContainer);
+    topNav.removeChild(menuListContainer);
   else {
     menuListContainer.style.visibility = "visible";
-    topNavChild.appendChild(menuListContainer, container.firstElementChild);
+    topNav.appendChild(menuListContainer, container.firstElementChild);
   }
 }
 

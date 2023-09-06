@@ -727,7 +727,7 @@ footer li {
   .state {
     max-height: unset;
     height: 100vh;
-    margin-top: 86vh;
+    margin-top: 60vh;
     text-align: center;
     background: url("./images/bg-pattern-circles.svg"),
       linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
@@ -756,8 +756,15 @@ footer li {
   }
 
   /* footer & profile */
+  .profile {
+    flex-direction: column;    
+    left: 0;
+    align-items: center;
+    width: 100%;
+  }
+
   .profile-img {
-    max-width: 40%;
+    margin-right: 0;
   }
   .profile li {
     margin: 0;
@@ -765,6 +772,11 @@ footer li {
   .profile-description {
     text-align: center;
     margin-top: 2rem;
+  }
+
+  footer > ul:first-child {
+    margin-left: 0;
+    margin-top: 460px;
   }
 
   footer,

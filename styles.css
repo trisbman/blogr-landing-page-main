@@ -47,8 +47,11 @@ button:hover {
 }
 
 .showcase-container {
-  background: url(./images/bg-pattern-intro.svg),
-    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
   padding: 40px 80px;
   height: 75vh;
   border-bottom-left-radius: 120px;
@@ -59,7 +62,7 @@ button:hover {
   justify-content: center;
 }
 
-header {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -106,7 +109,7 @@ header nav > ul {
 
 nav ul > li ul {
   display: none;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
   background: #fff;
   border-radius: 5px;
@@ -148,10 +151,6 @@ nav > a,
 nav li > ul {
   width: 120px;
   max-width: 150px;
-}
-
-nav > ul > li {
-  min-width: 150px;
 }
 
 .showcase-container img {
@@ -209,6 +208,7 @@ nav > ul > li {
 
 #toggle {
   display: none;
+  z-index: 10;
 }
 /* feature-a */
 .feature-a * {
@@ -394,7 +394,41 @@ html {
 .feature > * {
   overflow: visible;
 }
-/* footer */
+/* footer & profile */
+.profile {
+  position: absolute;
+  left: 150px;
+  display: flex;
+  margin-top: 90px;
+  color: white;
+}
+.profile-img {
+  margin-right: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.profile-description li:last-child {
+  margin-top: 0.5rem;
+}
+
+.profile-description b {
+  margin-bottom: .5rem;
+  display: inline-block;  
+}
+
+.profile-description p {
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-description h3 {
+  margin: auto;
+  margin-bottom: 40px;
+}
+
 footer * {
   color: #fff;
 }
@@ -407,6 +441,10 @@ footer {
   background: hsl(240, 10%, 16%);
   padding: 80px 120px;
   border-top-right-radius: 100px;
+}
+
+footer > ul:first-child {
+  margin-left: 600px;
 }
 
 footer img {
@@ -426,6 +464,11 @@ footer li {
   font-size: 14px;
 }
 
+@media screen and (min-width: 960px) {
+  ul:last-child > h3 {
+    margin-right: 0px;
+  }
+}
 /* mobile */
 
 @media screen and (max-width: 960px) {
@@ -506,9 +549,11 @@ footer li {
   }
   #navbar-div {
     min-width: 400px;
-    max-width: 90%;
+    width: 100%;
     justify-content: space-between;
     z-index: 2;
+    margin: 1rem;
+    margin-top: 1.25rem;
   }
   #navbar-div img {
     position: static;
@@ -550,6 +595,7 @@ footer li {
     position: absolute;
     height: 100vh;
     width: 100vw;
+    left: 0;
     bottom: -600px;
     background: linear-gradient(
       to right,
@@ -705,11 +751,22 @@ footer li {
   .state p {
     font-size: 18px;
     line-height: 2em;
-    max-width: 65vw;
+    max-width: 85vw;
     margin: 0 auto;
   }
 
-  /* footer */
+  /* footer & profile */
+  .profile-img {
+    max-width: 40%;
+  }
+  .profile li {
+    margin: 0;
+  }
+  .profile-description {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
   footer,
   footer *,
   footer > * {

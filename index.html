@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id ">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -20,42 +18,43 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Ubuntu"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Frontend Mentor | [Blogr]</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Blogr</title>
   </head>
   <body>
-     <div class="showcase-container">
-      <header class="navbar">
+    <header class="showcase-container">
+      <div class="navbar">
         <div id="navbar-div">
           <img src="./images/logo.svg" alt="" />
-          <nav>            
-              <button id='toggle' class="fa fa-bars"></button>
+          <nav>
+            <button id="toggle" class="fa fa-bars"></button>
             <ul id="menu">
               <li>
-                <a class='dropdown-header' href="#">Product &dtrif;</a>
-                <ul class='dropdown-content'>
-                  <li><a>Overview</a></li>
-                  <li><a>Pricing</a></li>
+                <a class="dropdown-header" href="#">Produk &dtrif;</a>
+                <ul class="dropdown-content">
+                  <li><a>Ikhtisar</a></li>
+                  <li><a>Harga</a></li>
                   <li><a>Marketplace</a></li>
-                  <li><a>Features</a></li>
-                  <li><a>Integrations</a></li>
+                  <li><a>Fitur</a></li>
+                  <li><a>Integrasi</a></li>
                 </ul>
               </li>
               <li>
-                <a class='dropdown-header' href="#">Company &dtrif;</a>
-                <ul class='dropdown-content'>
-                  <li><a>About</a></li>
-                  <li><a>Team</a></li>
+                <a class="dropdown-header" href="#">Perusahaan &dtrif;</a>
+                <ul class="dropdown-content">
+                  <li><a>Tentang Kami</a></li>
+                  <li><a>Tim Kami</a></li>
                   <li><a>Blog</a></li>
-                  <li><a>Careers</a></li>
+                  <li><a>Karir</a></li>
                 </ul>
               </li>
               <li>
-                <a class='dropdown-header' href="#">Connect &dtrif;</a>
-                <ul class='dropdown-content'>
-                  <li><a>Contact</a></li>
+                <a class="dropdown-header" href="#">Kontak &dtrif;</a>
+                <ul class="dropdown-content">
+                  <li><a>Kontak Kami</a></li>
                   <li><a>Newsletter</a></li>
                   <li><a>LinkedIn</a></li>
                 </ul>
@@ -64,156 +63,128 @@
           </nav>
         </div>
         <div>
-          <button class="login button-1">Login</button>
-          <button class="signup button-2">Sign Up</button>
+          <button class="login button-1">Masuk</button>
+          <button class="signup button-2">Daftar</button>
         </div>
-      </header>
+      </div>
       <section class="showcase">
-        <h1>A modern publishing platform</h1>
-        <h3>Grow your audience and build your online brand</h4>
+        <h1>Platform Publishing Modern</h1>
+        <h3>Bangun audiens Anda dan perbesar online branding Anda</h3>
         <div class="button">
-          <button class="button-2">Start for Free</button>
-          <button class="button-1">Learn More</button>
+          <button class="button-2">Mulai Gratis</button>
+          <button class="button-1">Lebih Lanjut</button>
         </div>
       </section>
-    </div>
+    </header>
 
-    <section class="feature feature-a">
-      <h1>Designed for the future</h1>
-      <div>
-        <div class="feature-img img-a img"></div>
+    <main>
+      <section class="feature feature-a">
+        <h1>Didesain untuk Masa Depan</h1>
+        <div>
+          <div class="feature-img img-a img"></div>
+          <div id="text">
+            <article>
+              <h2>Memperkenalkan editor multifungsi</h2>
+              <p>
+                Blogr difasilitasi UI yang sangat praktis dan memudahkan Anda
+                untuk fokus hanya pada membuat konten. Editor ini mendukung
+                manajemen multiple blogs dan juga manipulasi media seperti foto
+                dan video. Editor ini dapat ditambahkan plugin dan tema sehingga
+                memilki extensibiitas yang luar biasa
+              </p>
+            </article>
+            <article>
+              <h2>Manajemen konten yang kuat</h2>
+              <p>
+                Manajemen konten yang fleksibel memungkinkan pengguna untuk
+                dengan mudah bergerak posting.Tingkatkan kegunaan blog Anda
+                dengan menambahkan disesuaikan kategori, bagian, format, atau
+                aliran. Dengan fungsi ini, Anda berada dalam kendali penuh.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="state">
+        <img src="./images/illustration-phones.svg" alt="" />
+        <article>
+          <h1>Penyimpanan State yang Efisien</h1>
+          <p>
+            Dengan keandalan dan mempertimbangkan peringatan, pusat data di
+            seluruh dunia menyediakan tulang punggung untuk konektivitas
+            ultra-cepat. Ini memastikan situs Anda akan memuat secara instan, di
+            mana pun pembaca Anda, menjaga Anda Situs kompetitif.
+          </p>
+        </article>
+      </section>
+
+      <section class="feature feature-b">
+        <div class="feature-img img-b img"></div>
         <div id="text">
           <article>
-            <h2>Introducing an extensible editor</h2>
+            <h2>Gratis, terbuka, sederhana</h2>
             <p>
-              Blogr features an exceedingly intuitive interface which lets you
-              focus on one thing: creating content. The editor supports
-              management of multiple blogs and allows easy manipulation of
-              embeds such as images, videos, and Markdown. Extensibility with
-              plugins and themes provide easy ways to add functionality or
-              change the looks of a blog.
+              Blogr adalah aplikasi sumber terbuka dan terbuka yang didukung
+              oleh besar Komunitas pengembang bermanfaat. Ini mendukung
+              fitur-fitur seperti kode Syntax Highlighting, Umpan RSS, Integrasi
+              Media Sosial, alat komentar pihak ketiga, dan bekerja dengan mulus
+              dengan Google Analitik. Arsitekturnya bersih dan relatif mudah
+              belajar.
             </p>
           </article>
           <article>
-            <h2>Robust content management</h2>
+            <h2>Perkakas yang kuat</h2>
             <p>
-              Flexible content management enables users to easily move through
-              posts. Increase the usability of your blog by adding customized
-              categories, sections, format, or flow. With this functionality,
-              you’re in full control.
+              Baterai sudah termasuk dalam produk kami. Kami membangun alat CLI
+              sederhana dan langsung yang membuat penyesuaian dan penyebaran
+              angin sepoi-sepoi, tetapi mampu menghasilkan bahkan situs yang
+              paling rumit.
             </p>
           </article>
         </div>
-        
-      </div>
-    </section>
-
-    <section class="state">
-      <img src="./images/illustration-phones.svg" alt="" />
-      <article>
-        <h1>State of the Art Infrastructure</h1>
-        <p>
-          With reliability and speed in mind, worldwide data centers provide the
-          backbone for ultra-fast connectivity. This ensures your site will load
-          instantly, no matter where your readers are, keeping your site
-          competitive.
-        </p>
-      </article>
-    </section>
-
-    <section class="feature feature-b">
-      <div class="feature-img img-b img"></div>
-      <div id="text">
-        <article>
-          <h2>Free, open, simple</h2>
-          <p>
-            Blogr is a free and open source application backed by a large
-            community of helpful developers. It supports features such as code
-            syntax highlighting, RSS feeds, social media integration,
-            third-party commenting tools, and works seamlessly with Google
-            Analytics. The architecture is clean and is relatively easy to
-            learn.
-          </p>
-        </article>
-        <article>
-          <h2>Powerful tooling</h2>
-          <p>
-            Batteries included. We built a simple and straightforward CLI tool
-            that makes customization and deployment a breeze, but capable of
-            producing even the most complicated sites.
-          </p>
-        </article>
-      </div>
-    </section>
+      </section>
+      
+      <aside class="profile">
+        <img src="./images/self.jpg" alt="" class="profile-img" />
+        <div class="profile-description">
+          <ul>
+            <li><h3>Biodata Developer</h3></li>
+            <li>
+              <b>Nama</b>
+              <p>Tristan Budiman</p>
+            </li>
+            <li>
+              <b>Domisili</b>
+              <p>Medan, Sumatera Utara</p>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
 
     <footer>
-      <img src="./images/logo.svg" alt="" />
       <ul>
-        <h3>Product</h3>
-        <li><a href='#'>Overview</a></li>
-        <li><a href='#'>Pricing</a></li>
-        <li><a href='#'>Marketplace</a></li>
-        <li><a href='#'>Features</a></li>
-        <li><a href='#'>Integrations</a></li>
+        <h3>Produk</h3>
+        <li><a href="#">Ikhtisar</a></li>
+        <li><a href="#">Harga</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Fitur</a></li>
+        <li><a href="#">Integrasi</a></li>
       </ul>
       <ul>
-        <h3>Company</h3>
-        <li><a href='#'>About</a></li>
-        <li><a href='#'>Team</a></li>
-        <li><a href='#'>Blog</a></li>
+        <h3>Perusahaan</h3>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Tim Kami</a></li>
+        <li><a href="#">Blog</a></li>
       </ul>
       <ul>
-        <h3>Connect</h3>
-        <li><a href='#'>Contact</a></li>
-        <li><a href='#'>Newsletter</a></li>
-        <li><a href='#'>LinkedIn</a></li>
+        <h3>Hubungi Kami</h3>
+        <li><a href="#">Kontak Kami</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">LinkedIn</a></li>
       </ul>
     </footer>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/trisbman">Tristan Budiman</a>.
-    </div>
-    <!-- SCRIPT -->
-    <script>
-      window.onload = () => handler();
-      window.onscroll = () => sticky();
-
-      const toggleBtn = document.getElementById('toggle')
-      const menuListContainer = document.getElementById('menu')
-      const topNav = document.getElementById('navbar-div').parentElement
-      const container = topNav.parentElement
-
-      toggleBtn.addEventListener('click', toggle)
-
-      const container__height = getComputedStyle(container).height
-      const offsetTop = parseInt(topNav.offsetTop)
-      
-      function handler(){
-        if(getComputedStyle(toggleBtn).display === 'block'){  
-        menuListContainer.style.height = container__height              
-        topNav.children[0].lastElementChild.removeChild(menuListContainer)                                
-        }
-      }
-      
-      function toggle(){
-        if(getComputedStyle(menuListContainer)[0]) topNav.removeChild(menuListContainer)
-        else {
-          menuListContainer.style.visibility = 'visible'
-          topNav.appendChild(menuListContainer, container.firstElementChild)          
-        }        
-      }
-
-      function sticky(){                        
-        if (window.pageYOffset >= offsetTop) {          
-          topNav.classList.add("sticky")
-          topNav.classList.add("content")
-        } else {
-          topNav.classList.remove("sticky");
-        }
-      }
-    
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

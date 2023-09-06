@@ -727,7 +727,7 @@ footer li {
   .state {
     max-height: unset;
     height: 100vh;
-    margin-top: 60vh;
+    margin-top: 86vh;
     text-align: center;
     background: url("./images/bg-pattern-circles.svg"),
       linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
